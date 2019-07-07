@@ -1,0 +1,605 @@
+'''
+price = 10
+
+#floating
+
+rating = 4.9
+
+#BOOLEN
+is_published = True
+
+price = 20
+
+#first it is converted to binary representation
+print (price)
+
+#update price the variable
+full_name = 'John Smith'
+
+age = 20
+
+is_new = True
+
+print(full_name)
+
+'''
+'''
+name = input("what is your name? ")
+
+print ("Hi "+name)
+
+answer = input("answer john...dummy")
+
+print(answer)
+'''
+'''
+Dog = input("what is the name of your dog? ")
+
+print()
+'''
+'''
+Name = input("what is your name?")
+
+place = input("where do you stay?")
+
+colour = input("what is your favourite colour?")
+
+print(Name + " lives in " + place +" and she likes colour!! "+ colour )
+'''
+'''
+birth_year = input("Birth year: ")
+
+age = 2019 - int( birth_year)
+
+print (age)
+
+'''
+'''
+name = input ("hello John?..press enter")
+
+pounds = int(input ("How many pounds do you have?"))
+
+#or
+#pounds = int(pounds)
+
+weight_kg = pounds * 0.45
+
+print(weight_kg)
+
+'''
+'''
+course = "python's for beginners"
+
+print (course)
+
+another = course[:]
+print(another)
+
+
+print(course[-1])
+print(course[:3])
+print(course[-2])
+print(course[0:4])
+print(course[1:])
+
+name = 'peter'
+
+print(name[1:-1])
+'''
+'''
+first_name = 'john'
+
+second_name = 'Smith'
+
+msg = first_name + '['+ second_name +'] is a coder'
+
+print(msg)
+
+message = f'{first_name} [{second_name}] is a coder'
+
+print(message)
+
+'''
+'''
+course = 'python for beginners'
+#to show number of characters
+print(len(course))
+
+print(course.upper())
+
+print(course.lower)
+
+print(course.find('o'))
+
+print(course.replace('beginners', 'absolute starters'))
+
+'''
+'''
+x = 2.9
+
+print(round(2.9))
+
+print(abs(-2.9))
+
+ '''
+'''
+is_hot = False
+
+is_cold = True
+
+if is_hot:
+    print('its a hot day')
+    print('drink lots od water')
+
+elif is_cold:
+    print('its a cold day')
+    print('wear warm clothes')
+
+else:
+    print('enjoy your day')
+
+ '''
+'''
+price = 1000000
+
+has_good_credit = True
+
+if has_good_credit:
+
+    down_payment = price * 0.1
+
+else:
+
+    down_payment = 0.2 * price
+
+print(f"Down payment: ${down_payment}")
+
+'''
+'''
+income = int(input('what is your income?'))
+
+credit_worthy = input("credit worthy?'yes/no'")
+
+
+if income >= 100000:
+
+    print('pass to the the next test')
+
+if credit_worthy == yes:
+    
+    print("you are eligible for loan")
+
+else:
+    print("you are not eligible for a loan")
+'''
+'''
+has_high_income = True
+
+has_good_credit = True
+
+if has_good_credit and has_high_income:
+    print('eligible for loan')
+'''
+'''
+temperature = 30
+
+if temperature > 30:
+
+    print("its a hot day")
+
+else:
+
+    print("its not a hot day")
+'''
+'''
+Name = input('what is your name?')
+
+if len(Name) < 3:
+    print('name must be atleast 3 characters')
+
+elif len(Name) > 50:
+    print('Maximum characters excided')
+
+else:
+    print('Name looks good')
+'''
+'''
+weight = int(input('weight: '))
+
+unit = input('(L)bs or (K)g: ')
+
+if unit.upper() == "L":
+
+    converted = weight / 0.45
+
+    print(f"you are {converted} pounds")
+
+else:
+    converted = weight / 0.45
+
+    print(f"You are {converted} kilos")
+
+'''
+'''
+i = 1 
+while i <= 5:
+    print('*' * i)
+    i = i + 1
+
+print("Done")
+
+'''
+'''
+secret_number = 9
+
+guess_count = 0
+
+guess_limit = 3
+
+while guess_count < guess_limit:
+
+    guess = int(input('Guess: '))
+
+    guess_count += 1
+
+    if guess == secret_number:
+
+        print('you won!')
+
+        break
+
+else:
+    print('sorry, you failed')
+
+'''
+'''
+command = ""
+started = False
+
+while True:
+
+    command = input("> ").lower()
+
+    if command == "start":
+        if started:
+            print("car is started")
+
+        else:
+            started = True
+            
+            print("car is started...") 
+ 
+ 
+    elif command == "stop":
+        if not started:
+            print("car is already stopped")
+            
+            print("car is stopped")
+
+    elif command == "help":
+        print(
+
+            start - to start the car.
+            stop - to stop the car.
+            quit - to quit.
+
+        )
+    
+
+     
+
+'''
+'''
+for item in ['marsh','john','kamau']:
+
+    print(item)
+'''
+'''
+prices = [10, 20, 30]
+
+total = 0
+
+for price in prices:
+
+    total += price
+
+print(f"The total price is: {total}")
+'''
+'''
+for x in range (4):
+
+    for y in range(3):
+
+        print(f'({x}, {y})')
+
+'''
+'''
+numbers = [5, 2, 5, 2, 2]
+
+for x_count in numbers:
+
+    output = ''
+
+    for count in range(x_count):
+
+        output += 'x'
+
+    print(output)
+'''
+'''
+numbers = [3,6, 7, 9, 2, 1]
+
+max = numbers[0]
+
+for number in numbers:
+
+    if number > max:
+
+        max = number
+
+print(max)
+
+'''
+'''
+matrix = [
+
+    [1,2,3],
+    [4,5,6],
+    [7,8,9],
+
+]
+
+for row in matrix:
+
+    for item in row:
+
+        print(item)
+
+'''
+'''
+numbers = [5, 2, 1, 7, 4]
+
+numbers.append(20)
+
+numbers.remove(4)
+
+print(numbers.index(5))
+
+
+print(numbers)
+
+numbers = numbers.copy()
+'''
+
+'''
+for loops - to iterate over characters in a string
+
+'''
+'''
+for item in [3, 4, 5, 6, 7]:
+    print(item * 4)
+
+
+for item in range(5, 10, 2):
+    print(item)
+
+
+prices = [10, 20, 30,40]
+
+total = 0
+
+for price in prices:
+
+    total += price
+
+print(f"Total: {total}")
+
+'''
+'''
+numbers = [5, 2, 5, 2, 2]
+
+for item in numbers:
+
+    output = ''
+
+    for count in range (item):
+
+        output += 'x'
+
+    print(output)
+
+'''
+'''
+numbers = [5, 2, 1, 7, 4]
+
+print(numbers.sort())
+
+'''
+
+'''
+numbers = [5, 5, 2, 1, 1, 7, 4]
+
+uniques = []
+
+for number in numbers:
+
+    if number not in uniques:
+
+        uniques.append(number)
+
+print(uniques)
+'''
+'''
+customer = {
+    "name":"john smith",
+    "age":30,
+    "is_verified":True
+}
+customer["name"] = "jack smith"
+
+print(customer.get('name'))
+
+'''
+'''
+phone = input("phone: ")
+
+digits_mapping = {
+
+    "1":"one",
+    "2":"two",
+    "3":"three",
+    "4":"four",
+    "5":"five"
+}
+output = ""
+
+for ch in phone:
+
+    output += digits_mapping.get(ch, "!") + " "
+
+print(output)
+
+'''
+'''
+def greet_user(name):
+
+    print(f"hi {name}!")
+    
+    print("hi there")
+    print("welcome abroad")
+
+print("start")
+greet_user("john")
+greet_user("mary")
+print("finish")
+
+'''
+'''
+def square(number):
+    return number * number
+
+result = square(3)
+
+print(result)
+'''
+'''
+
+try:
+    age = int(input('age: '))
+    income = 20000
+    risk = income/age
+    print(age)
+except ZeroDivisionError:
+    print('age cannot be zero')
+
+except ValueError:
+    print("invalifd value")
+
+print("ocean is blue")
+
+'''
+'''
+class Point:
+    
+    def__init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def move(self):
+        print("move")
+
+    def draw(self):
+        print("draw")
+
+Point = Point(10, 20)
+
+
+print(point.x)
+
+'''
+'''
+
+class Person():
+
+    def__init__(self, name):
+        
+        self.name = name
+
+    def talk(self):
+        print(f"hi you talking to {name}")
+
+john = Person()
+
+john.talk()
+'''
+
+
+
+'''
+class Dog:
+
+    def walk(self):
+
+        print("walk")
+
+
+    class Cat:
+
+        def walk(self)
+
+        print("walk")
+
+'''
+'''
+def lbs_to_kg(weight):
+
+    return weight * 0.45
+
+
+
+def kg_to_lbs(weight):
+
+    return weight / 0.45
+'''
+'''
+apple_price = 2
+
+money = 10
+
+input_count = input('how many apples do you want?: ')
+
+count = int(input_count)
+
+total_price = apple_price * count
+
+print("you will buy" + str(count) + ' apples')
+print('The total price is'+ str(total_price) + ' dollars left')
+
+if money > total_price:
+    print('you have bought') + str(count) + ' apples'
+    print('you have' + str(money - total_price) + ' dollars left')
+
+elif money == total_price:
+    print("you have bought" + str(count) + ' apples')
+    print('your wallet is now empty')
+
+else:
+    print('you do not have enough money')
+    print('you cannot buy that many apples')
+
+'''  
+'''  
+def my_function_with_args(username, greeting):
+    print("Hello, %s , From My Function!, I wish you %s"%(username, greeting))
+
+my_function_with_args('john doe', "great day")
+
+
+def sum_two_numbers(a, b):
+    return a + b
+
+x = sum_two_numbers(1,2)
+
+print(x)
+
+'''
